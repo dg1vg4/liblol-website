@@ -2,7 +2,7 @@ enableInlineShortcodes: true
 defaultContentLanguage: zh-cn
 # Hugo configuration file
 baseURL: "https://liblol.aosc.io/"
-title: "libLoL 主页"
+title: "libLoL"
 enableGitInfo: true
 
 
@@ -43,27 +43,12 @@ menu:
       weight: 6
       params:
         type: search
-  sidebar:
-    - name: "添砖加瓦"
-      params:
-        type: separator
-      pageRef: "/report"
-      weight: 1
-    - name: "报告兼容性"
-      url: "https://github.com/AOSC-Dev"
-      weight: 2
-    - name: "提交应用信息"
-      url: "https://github.com/AOSC-Dev"
-      weight: 2
-    - name: "问题反馈"
-      url: "https://github.com/AOSC-Dev"
-      weight: 3
 params:
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
   page:
     # full (100%), wide (90rem), normal (1280px)
-    width: wide
+    width: 920px
   footer:
 
   # Search
