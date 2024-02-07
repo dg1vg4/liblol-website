@@ -5,7 +5,6 @@ baseURL: "https://liblol.aosc.io/"
 title: "libLoL"
 enableGitInfo: true
 
-
 outputs:
   home: [ HTML ]
   page: [ HTML ]
@@ -27,20 +26,20 @@ markup:
 
 menu:
   main:
-    - name: 社区主页
-      url: https://aosc.io/
+    - name: 使用教程
+      url: /docs/usage
       weight: 1
     - name: 应用列表
       url: /docs/apps/
       weight: 2
     - name: 联系我们
       url: https://aosc.io/zh-cn/contact/
+      weight: 3
+    - name: 社区主页
+      url: https://aosc.io/zh-cn/
       weight: 4
-    - name: 关于 libLoL
-      url: /about
-      weight: 5
     - name: Search
-      weight: 6
+      weight: 5
       params:
         type: search
 params:
