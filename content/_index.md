@@ -28,5 +28,5 @@ libLoL (LoongArch on LoongArch) 是一款用于提供旧世界 ABI 兼容性的�
 ### 参考资料
 
 {{< cards >}} 
-{{< card link="usage" title="技术文档" icon="document-duplicate" >}} 
+{{< card link="/docs/dev" title="技术文档" icon="document-duplicate" >}} 
 {{< /cards >}}
