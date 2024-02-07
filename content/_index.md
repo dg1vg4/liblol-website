@@ -16,7 +16,7 @@ toc: false
 
 [sse-roadshow]: https://roadshow.sseinfo.com/roadshowIndex.do?id=16536#cd-placeholder-hdjl
 
-[安同开源社区（AOSC）](https://aosc.io/)<icon="aosc">作为「牢记服务用户需求这一宗旨」的一群人，此刻便站了出来。我们给出的答案是
+[安同开源社区（AOSC）](https://aosc.io/)作为「牢记服务用户需求这一宗旨」的一群人，此刻便站了出来。我们给出的答案是
 `libLoL`即 LoongArch on LoongArch。
 
 AOSC 开发者[王邈][shankerwangmiao]与[刘子兴][liushuyu]

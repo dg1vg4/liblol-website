@@ -1,7 +1,7 @@
 enableInlineShortcodes: true
 defaultContentLanguage: zh-cn
 # Hugo configuration file
-baseURL: "https://demo.xunpod.com/"
+baseURL: "https://liblol.aosc.io/"
 title: "libLoL"
 enableGitInfo: true
 
