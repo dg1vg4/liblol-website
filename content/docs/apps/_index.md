@@ -6,23 +6,21 @@ weight: 2
 
 ## 须知
 
-### 兼容性表示
+libLoL 应用兼容性数据均由社区贡献者维护，兼容性报告对应的 libLoL 版本、应用版本和来源等信息均在表格中列出。其中，兼容性使用如下方式表示：
 
-应用的`兼容性`值用如下方法表示
-
-- 完全兼容：无需额外操作
-- 部分兼容：需要执行额外操作，才能运行应用
-- 不兼容：libLoL无法使其运行在新世界，
+- 完全兼容：无需额外操作，直接安装或解压即可使用
+- 部分兼容：安装或解压后需要执行额外操作才能运行应用
+- 不兼容：已知无法在新世界系统中使用
 - 未知：尚未进行测试或适配
 
 ## 应用来源
-如果您发现某些应用libLoL还不适配，请报告给我们，参考[问题报告](/docs/report/)页面
 
+如果您发现某些应用无法通过 libLoL 运行，请联系我们。报告方式详见[报告兼容性问题](/docs/report/)页面。
 
 {{< cards >}} 
 {{< card link="/docs/apps/loong/" title="龙芯应用合作社" icon="loongapp" >}}
-{{< card link="/docs/usage" title="其他来源" icon="aosc-os" >}}
-{{< card link="/docs/report" title="应用报告" icon="aosc-os" >}}
+{{< card link="/docs/apps/other/" title="其他来源" icon="aosc-os" >}}
+{{< card link="/docs/report/" title="报告兼容性问题" icon="aosc-os" >}}
 {{< /cards >}}
 
 
