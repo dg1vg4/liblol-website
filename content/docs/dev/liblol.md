@@ -6,15 +6,15 @@ weight: 1
 
 ## 简介
 
-这是由 AOSC 社区开发的兼容方案，由两部分组成：
+libLoL 是由安同开源社区 (AOSC) 开发的新旧世界应用兼容层。该兼容层主要由两部分组成：
 
 * [内核模块](https://github.com/AOSC-Dev/la_ow_syscall)：提供旧世界系统调用 ABI 的支持。
 * [运行时](https://github.com/shankerwangmiao/liblol)：为动态链接的旧世界应用提供依赖组件。
 
-`libLoL` 的基本特点如下：
+libLoL 的基本特点如下：
 
 * 兼容性的方向：在新世界系统上提供旧世界兼容性。
-* sysroot：没有单独的 sysroot，而是仅提供修改过的 `glibc`。该`glibc`同时提供新旧世界版本的符号，可以让旧世界的可执行程序加载新世界的动态链接库。
+* sysroot：没有单独的 sysroot，而是仅提供修改过的 `glibc`。该 `glibc` 同时提供新旧世界版本的符号，可以让旧世界的可执行程序加载新世界的动态链接库。
 * 内核：使用模块方式，动态 patch 系统调用表，不侵入架构无关逻辑。
 
 这意味着：

@@ -9,18 +9,17 @@ libLoL (LoongArch on LoongArch) 是一款用于提供旧世界 ABI 兼容性的�
 
 欲知有关新旧世界应用不兼容来由的相关信息，请见龙芯开源社区《咱龙了吗？》站点的[《新世界与旧世界》](https://areweloongyet.com/docs/old-and-new-worlds/)一文。
 
-### 基本信息
+### 安装教程
 
-{{< cards >}} 
-{{< card link="/docs/usage/#aosc-os" title="AOSC OS 安装教程" icon="aosc-os" >}} 
-{{< card link="/docs/usage/#debian" title="Debian 安装教程" icon="debian" >}} 
-{{< card link="/docs/apps" title="应用兼容性数据库" icon="check-circle" >}}
+{{< cards >}}
+{{< card link="/docs/usage/#aosc-os" title="AOSC OS" icon="aosc-os-no-padding" >}}
+{{< card link="/docs/usage/#debian" title="Debian" icon="debian" >}}
 {{< /cards >}}
 
 ### 常用链接
 
 {{< cards >}}
-{{< card link="/docs/usage/" title="使用教程" icon="information-circle" >}}
+{{< card link="/docs/apps" title="应用兼容性数据库" icon="check-circle" >}}
 {{< card link="/docs/report/" title="报告兼容性问题" icon="exclamation-circle" >}}
 {{< card link="/docs/dev/" title="技术文档" icon="document-duplicate" >}}
 {{< /cards >}}
