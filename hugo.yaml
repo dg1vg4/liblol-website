@@ -2,7 +2,7 @@ enableInlineShortcodes: true
 defaultContentLanguage: zh-cn
 # Hugo configuration file
 baseURL: "https://liblol.aosc.io/"
-title: "libLoL"
+title: "libLoL 主页"
 enableGitInfo: true
 
 
@@ -31,13 +31,13 @@ menu:
       url: https://aosc.io/
       weight: 1
     - name: 应用列表
-      url: https://bbs.aosc.io/
+      url: /docs/apps/
       weight: 2
     - name: 联系我们
       url: https://aosc.io/zh-cn/contact/
       weight: 4
     - name: 关于 libLoL
-      url: https://aosc.io/zh-cn/about/
+      url: /about
       weight: 5
     - name: Search
       weight: 6
