@@ -16,7 +16,7 @@ libLoL 应用兼容性数据由社区贡献者维护，兼容性报告对应的 
 如果您发现某些应用无法通过 libLoL 运行，请联系我们。报告方式详见[报告兼容性问题](/docs/report/)页面。
 
 {{< cards >}} 
-{{< card link="/docs/apps/loong/" title="龙芯应用合作社" icon="loongapp" >}}
+{{< card link="/docs/apps/loongapps/" title="龙芯应用合作社" icon="loongapp" >}}
 {{< card link="/docs/apps/other/" title="其他来源" icon="globe" >}}
 {{< card link="/docs/report/" title="报告兼容性问题" icon="exclamation-circle" >}}
 {{< /cards >}}
