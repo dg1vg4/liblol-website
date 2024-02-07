@@ -1,0 +1,93 @@
+enableInlineShortcodes: true
+defaultContentLanguage: zh-cn
+# Hugo configuration file
+baseURL: "https://demo.xunpod.com/"
+title: "libLoL"
+enableGitInfo: true
+
+
+outputs:
+  home: [ HTML ]
+  page: [ HTML ]
+  section: [ HTML, RSS ]
+# import hextra as module
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: 社区
+      url: https://aosc.io/
+      weight: 1
+    - name: 论坛
+      url: https://bbs.aosc.io/
+      weight: 2
+    - name: 资讯
+      url: https://bbs.aosc.io/
+      weight: 3
+    - name: 联系
+      url: https://aosc.io/zh-cn/contact/
+      weight: 4
+    - name: 关于
+      url: https://aosc.io/zh-cn/about/
+      weight: 5
+    - name: Search
+      weight: 6
+      params:
+        type: search
+    - name: GitHub
+      weight: 7
+      url: "https://github.com/AOSC-Dev/liblol"
+      params:
+        icon: github
+  sidebar:
+    - name: "添砖加瓦"
+      params:
+        type: separator
+      pageRef: "/report"
+      weight: 1
+    - name: "报告兼容性"
+      url: "https://github.com/AOSC-Dev"
+      weight: 2
+    - name: "提交应用信息"
+      url: "https://github.com/AOSC-Dev"
+      weight: 2
+    - name: "问题反馈"
+      url: "https://github.com/AOSC-Dev"
+      weight: 3
+params:
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: wide
+  footer:
+
+  # Search
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+  editURL:
+    enable: true
+    base: "https://github.com/xunpod/demo/edit/master/content"
+
+
+description: AOSC 为您在新旧世界之间架起桥梁！
