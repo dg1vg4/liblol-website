@@ -4,7 +4,7 @@ toc: true
 weight: 2
 ---
 
-libLoL 应用兼容性数据均由社区贡献者维护，兼容性报告对应的 libLoL 版本、应用版本和来源等信息均在表格中列出。其中，兼容性使用如下方式表示：
+libLoL 应用兼容性数据由社区贡献者维护，兼容性报告对应的 libLoL 版本、应用版本和来源等信息均在表格中列出。其中，兼容性使用如下方式表示：
 
 - 完全兼容：无需额外操作，直接安装或解压即可使用
 - 部分兼容：安装或解压后需要执行额外操作才能运行应用
@@ -20,5 +20,3 @@ libLoL 应用兼容性数据均由社区贡献者维护，兼容性报告对应�
 {{< card link="/docs/apps/other/" title="其他来源" icon="globe" >}}
 {{< card link="/docs/report/" title="报告兼容性问题" icon="exclamation-circle" >}}
 {{< /cards >}}
-
-

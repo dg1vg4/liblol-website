@@ -18,16 +18,16 @@ oma install liblol
 
 ### Debian
 
-首先下载内核模块包 [liblol-dkms](https://github.com/AOSC-Dev/la_ow_syscall/releases/tag/debian%2F0.1.0) 并执行如下命令安装：
+首先，下载内核模块包 [liblol-dkms](https://github.com/AOSC-Dev/la_ow_syscall/releases/tag/debian%2F0.1.0) 并执行如下命令安装：
 
 ```
-sudo apt-get install ./liblol-dkms_0.1.0_loong64.deb
+sudo apt install ./liblol-dkms_0.1.0_loong64.deb
 ```
 
 安装完成后，下载 libLoL 运行时包 [liblol_0.1.4.pre2-1_loong64.deb](https://github.com/AOSC-Dev/liblol/releases/download/debian%2Fv0.1.4_pre2-1/liblol_0.1.4.pre2-1_loong64.deb)，随后执行如下命令安装：
 
 ```
-sudo apt-get install ./liblol_0.1.4.pre2-1_loong64.deb
+sudo apt install ./liblol_0.1.4.pre2-1_loong64.deb
 ```
 
 ## 安装应用
@@ -44,4 +44,4 @@ sudo apt-get install ./liblol_0.1.4.pre2-1_loong64.deb
 
 在完成上述步骤后您就可以在“新世界”享受“旧世界”应用了！
 
-如果您在使用过程中遇到问题，请向我们[报告兼容性问题](/docs/report/).
+如果您在使用过程中遇到问题，请向我们[报告兼容性问题](/docs/report/)。
