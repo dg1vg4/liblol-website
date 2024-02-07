@@ -27,30 +27,22 @@ markup:
 
 menu:
   main:
-    - name: 社区
+    - name: 社区主页
       url: https://aosc.io/
       weight: 1
-    - name: 论坛
+    - name: 应用列表
       url: https://bbs.aosc.io/
       weight: 2
-    - name: 资讯
-      url: https://bbs.aosc.io/
-      weight: 3
-    - name: 联系
+    - name: 联系我们
       url: https://aosc.io/zh-cn/contact/
       weight: 4
-    - name: 关于
+    - name: 关于 libLoL
       url: https://aosc.io/zh-cn/about/
       weight: 5
     - name: Search
       weight: 6
       params:
         type: search
-    - name: GitHub
-      weight: 7
-      url: "https://github.com/AOSC-Dev/liblol"
-      params:
-        icon: github
   sidebar:
     - name: "添砖加瓦"
       params:
