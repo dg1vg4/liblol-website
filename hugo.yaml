@@ -87,7 +87,5 @@ params:
     displayToggle: true
   editURL:
     enable: true
-    base: "https://github.com/xunpod/demo/edit/master/content"
-
-
+    base: "https://github.com/AOSC-Dev/liblol-website/edit/master/content"
 description: AOSC 为您在新旧世界之间架起桥梁！
