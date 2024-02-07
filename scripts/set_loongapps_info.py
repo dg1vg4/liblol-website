@@ -3,10 +3,16 @@ import pandas as pd
 
 
 def indexmd():
-
     df = pd.read_csv(
         "../static/data/loongapplist-latest.csv", engine="python", encoding="utf-8-sig"
     )
+    for name in df["应用名称"]:
+        a = "3A4000"
+        if a in name:
+            df.drop((df[df["应用名称"] == name]).index, inplace=True)
+        else:
+            continue
+
     df.sort_values("应用编号", ascending=True, inplace=True)
     # 删除开源软件
     df.drop((df[df["开发者"] == "开源软件"]).index, inplace=True)
@@ -54,6 +60,12 @@ def appmd():
     df = pd.read_csv(
         "../static/data/loongapplist-latest.csv", engine="python", encoding="utf-8-sig"
     )
+    for name in df["应用名称"]:
+        a = "3A4000"
+        if a in name:
+            df.drop((df[df["应用名称"] == name]).index, inplace=True)
+        else:
+            continue
     df.drop(columns="可执行文件", axis=1, inplace=True)
     df.drop(columns="图片链接", axis=1, inplace=True)
     df.drop(columns="文件大小", axis=1, inplace=True)

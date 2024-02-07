@@ -5,16 +5,6 @@ weight: 5
 ---
 |   编号 | 应用名称                              | 页面链接                                        | 版本                       | 兼容性   | liblol版本   | 详细信息         |
 |-----:|:----------------------------------|:--------------------------------------------|:-------------------------|:------|:-----------|:-------------|
-|   39 | 360安全卫士(3A4000)版                  | [查看](http://app.loongapps.cn/#/detail/39)   | 1.0.0.10                 | 未测试   | 最新         | [查看](./39)   |
-|   40 | 360安全浏览器(3A4000)版                 | [查看](http://app.loongapps.cn/#/detail/40)   | 10.4.1006.26-1+edu2      | 未测试   | 最新         | [查看](./40)   |
-|   41 | 钉钉(3A4000)版                       | [查看](http://app.loongapps.cn/#/detail/41)   | 1.4.0.20422              | 未测试   | 最新         | [查看](./41)   |
-|   45 | 美图秀秀(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/45)   | 2.0.0                    | 未测试   | 最新         | [查看](./45)   |
-|   46 | 360压缩(3A4000)版                    | [查看](http://app.loongapps.cn/#/detail/46)   | 1.0.0.1012               | 未测试   | 最新         | [查看](./46)   |
-|   49 | 向日葵(3A4000)版                      | [查看](http://app.loongapps.cn/#/detail/49)   | 10.0.2.24779             | 未测试   | 最新         | [查看](./49)   |
-|   52 | 幻影图像(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/52)   | 1.0.8.10610              | 未测试   | 最新         | [查看](./52)   |
-|   53 | mindmaster思维导图(3A4000)版           | [查看](http://app.loongapps.cn/#/detail/53)   | 8.0.3                    | 未测试   | 最新         | [查看](./53)   |
-|   55 | Visual Studio Code(3A4000)版       | [查看](http://app.loongapps.cn/#/detail/55)   | 1.42.1                   | 未测试   | 最新         | [查看](./55)   |
-|   89 | 龙芯天气(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/89)   | 1.0.1-1                  | 未测试   | 最新         | [查看](./89)   |
 |   91 | 龙芯天气                              | [查看](http://app.loongapps.cn/#/detail/91)   | 1.0.1-1.lnd.1            | 未测试   | 最新         | [查看](./91)   |
 |   95 | 海泰红莲花浏览器                          | [查看](http://app.loongapps.cn/#/detail/95)   | 5.0.0.25                 | 未测试   | 最新         | [查看](./95)   |
 |   97 | 360终端安全防护                         | [查看](http://app.loongapps.cn/#/detail/97)   | 10.0.0.21                | 未测试   | 最新         | [查看](./97)   |
@@ -26,9 +16,6 @@ weight: 5
 |  114 | 永中阅读器                             | [查看](http://app.loongapps.cn/#/detail/114)  | 3.0.2021                 | 未测试   | 最新         | [查看](./114)  |
 |  115 | 永中office                          | [查看](http://app.loongapps.cn/#/detail/115)  | 8.0.3072                 | 未测试   | 最新         | [查看](./115)  |
 |  116 | 江民防病毒系统                           | [查看](http://app.loongapps.cn/#/detail/116)  | 1.0.1-1                  | 未测试   | 最新         | [查看](./116)  |
-|  121 | 龙吟翻译(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/121)  | 1.0-1                    | 未测试   | 最新         | [查看](./121)  |
-|  124 | 智学网(3A4000)版                      | [查看](http://app.loongapps.cn/#/detail/124)  | 1.0.0-1                  | 未测试   | 最新         | [查看](./124)  |
-|  125 | 希沃白版(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/125)  | 1.0.0-1                  | 未测试   | 最新         | [查看](./125)  |
 |  126 | 智学网                               | [查看](http://app.loongapps.cn/#/detail/126)  | 1.0.0                    | 未测试   | 最新         | [查看](./126)  |
 |  127 | 希沃白板                              | [查看](http://app.loongapps.cn/#/detail/127)  | 0.1.0-1.lnd.1            | 未测试   | 最新         | [查看](./127)  |
 |  128 | 抖音                                | [查看](http://app.loongapps.cn/#/detail/128)  | 1.0.0                    | 未测试   | 最新         | [查看](./128)  |
@@ -47,61 +34,31 @@ weight: 5
 |  161 | 向日葵                               | [查看](http://app.loongapps.cn/#/detail/161)  | 11.0.0.38604             | 未测试   | 最新         | [查看](./161)  |
 |  162 | putty                             | [查看](http://app.loongapps.cn/#/detail/162)  | 0.70-6                   | 未测试   | 最新         | [查看](./162)  |
 |  164 | landrop局域网投放器                     | [查看](http://app.loongapps.cn/#/detail/164)  | 1.0.0                    | 未测试   | 最新         | [查看](./164)  |
-|  165 | landrop局域网投放器(3A4000)版            | [查看](http://app.loongapps.cn/#/detail/165)  | 1.0.0                    | 未测试   | 最新         | [查看](./165)  |
 |  166 | 瑞星ESM                             | [查看](http://app.loongapps.cn/#/detail/166)  | 3.0.0.44                 | 未测试   | 最新         | [查看](./166)  |
 |  168 | FBreader电子阅读书                     | [查看](http://app.loongapps.cn/#/detail/168)  | 0.12.10                  | 未测试   | 最新         | [查看](./168)  |
 |  170 | Scratch编程开发                       | [查看](http://app.loongapps.cn/#/detail/170)  | 1.4.0.6                  | 未测试   | 最新         | [查看](./170)  |
 |  175 | 云谐清                               | [查看](http://app.loongapps.cn/#/detail/175)  | 1.0                      | 未测试   | 最新         | [查看](./175)  |
 |  176 | Guee录屏机                           | [查看](http://app.loongapps.cn/#/detail/176)  | 1.1.0-0                  | 未测试   | 最新         | [查看](./176)  |
-|  178 | Guee录屏机(3A4000)版                  | [查看](http://app.loongapps.cn/#/detail/178)  | 1.1.0-0                  | 未测试   | 最新         | [查看](./178)  |
 |  193 | 金格OFD                             | [查看](http://app.loongapps.cn/#/detail/193)  | 8.2.4.178                | 未测试   | 最新         | [查看](./193)  |
 |  194 | 超阅版式                              | [查看](http://app.loongapps.cn/#/detail/194)  | 3.0.0.120                | 未测试   | 最新         | [查看](./194)  |
 |  196 | Scratch编程开发 3.0                   | [查看](http://app.loongapps.cn/#/detail/196)  | 3.0                      | 未测试   | 最新         | [查看](./196)  |
-|  197 | Scratch编程开发 3.0(3A4000)版          | [查看](http://app.loongapps.cn/#/detail/197)  | 3.0                      | 未测试   | 最新         | [查看](./197)  |
-|  198 | 网络画板(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/198)  | 1.0.0-1                  | 未测试   | 最新         | [查看](./198)  |
-|  199 | ZGRobot机器人编程(3A4000)版             | [查看](http://app.loongapps.cn/#/detail/199)  | 2.1.1-8                  | 未测试   | 最新         | [查看](./199)  |
 |  200 | 极域课堂互动教学系统软件 教师端                  | [查看](http://app.loongapps.cn/#/detail/200)  | 2.7.3548-1.0.85+10751gch | 未测试   | 最新         | [查看](./200)  |
 |  201 | 极域课堂互动教学系统软件 学生端                  | [查看](http://app.loongapps.cn/#/detail/201)  | 2.7.3548-1.0.85+10751gch | 未测试   | 最新         | [查看](./201)  |
 |  203 | 智龙集成开发环境                          | [查看](http://app.loongapps.cn/#/detail/203)  | 1.0.003-1                | 未测试   | 最新         | [查看](./203)  |
-|  204 | 智龙集成开发环境(3A4000)版                 | [查看](http://app.loongapps.cn/#/detail/204)  | 1.0.003-1                | 未测试   | 最新         | [查看](./204)  |
-|  205 | 网动会议(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/205)  | 32.2201.52-1             | 未测试   | 最新         | [查看](./205)  |
-|  206 | putty(3A4000)版                    | [查看](http://app.loongapps.cn/#/detail/206)  | 0.70-6                   | 未测试   | 最新         | [查看](./206)  |
 |  212 | 中望CAD2022                         | [查看](http://app.loongapps.cn/#/detail/212)  | 22.1.2.3                 | 未测试   | 最新         | [查看](./212)  |
 |  213 | docmail                           | [查看](http://app.loongapps.cn/#/detail/213)  | 5.0.1                    | 未测试   | 最新         | [查看](./213)  |
 |  214 | 百度网盘                              | [查看](http://app.loongapps.cn/#/detail/214)  | 4.3.0                    | 未测试   | 最新         | [查看](./214)  |
-|  215 | 百度网盘(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/215)  | 4.3.0                    | 未测试   | 最新         | [查看](./215)  |
 |  219 | 奇安信网神终端安全管理系统                     | [查看](http://app.loongapps.cn/#/detail/219)  | 8.0.5-1400               | 未测试   | 最新         | [查看](./219)  |
 |  220 | 软件包安装器                            | [查看](http://app.loongapps.cn/#/detail/220)  | 1.0.0-1.lnd.1            | 未测试   | 最新         | [查看](./220)  |
 |  222 | 龙芯应用合作社                           | [查看](http://app.loongapps.cn/#/detail/222)  | 2.0.0-1.lnd.10           | 未测试   | 最新         | [查看](./222)  |
-|  223 | 龙芯应用合作社(3A4000)版                  | [查看](http://app.loongapps.cn/#/detail/223)  | 2.0.0-1.lnd.10           | 未测试   | 最新         | [查看](./223)  |
-|  230 | 软件包安装器(3A4000)版                   | [查看](http://app.loongapps.cn/#/detail/230)  | 1.0.0-1                  | 未测试   | 最新         | [查看](./230)  |
 |  236 | 福昕OFD版式办公套件                       | [查看](http://app.loongapps.cn/#/detail/236)  | 8.0.4.210901.87bb0b4     | 未测试   | 最新         | [查看](./236)  |
 |  250 | LoongBlock龙芯青少年编程平台               | [查看](http://app.loongapps.cn/#/detail/250)  | 0.1.1-8                  | 未测试   | 最新         | [查看](./250)  |
-|  251 | LoongBlock龙芯青少年编程平台(3A4000)版      | [查看](http://app.loongapps.cn/#/detail/251)  | 0.1.0-7                  | 未测试   | 最新         | [查看](./251)  |
-|  252 | Kdenlive视频编辑(3A4000)版             | [查看](http://app.loongapps.cn/#/detail/252)  | 18.12.3-edu1             | 未测试   | 最新         | [查看](./252)  |
 |  253 | Eclipse                           | [查看](http://app.loongapps.cn/#/detail/253)  | 4.10-1.lnd.3             | 未测试   | 最新         | [查看](./253)  |
-|  254 | Eclipse(3A4000)版                  | [查看](http://app.loongapps.cn/#/detail/254)  | 4.10-1.lnd.2             | 未测试   | 最新         | [查看](./254)  |
-|  257 | Ardour数字音频工厂(3A4000)版             | [查看](http://app.loongapps.cn/#/detail/257)  | 1:5.12.0-3               | 未测试   | 最新         | [查看](./257)  |
-|  278 | geogebra几何图形(3A4000)版             | [查看](http://app.loongapps.cn/#/detail/278)  | 4.0.34.0+dfsg1-7         | 未测试   | 最新         | [查看](./278)  |
-|  286 | 极域课堂互动教学系统软件 教师端(3A4000)版         | [查看](http://app.loongapps.cn/#/detail/286)  | 2.7.3421-1.0.68+10751gch | 未测试   | 最新         | [查看](./286)  |
-|  287 | 极域课堂互动教学系统软件 学生端(3A4000)版         | [查看](http://app.loongapps.cn/#/detail/287)  | 2.7.3421-1.0.68+10751gch | 未测试   | 最新         | [查看](./287)  |
-|  295 | 二维码生成器(3A4000)版                   | [查看](http://app.loongapps.cn/#/detail/295)  | 1.4~bzr32-edu1           | 未测试   | 最新         | [查看](./295)  |
-|  296 | 分数练习(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/296)  | 4:17.08.3-edu1           | 未测试   | 最新         | [查看](./296)  |
-|  297 | 海龟编程(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/297)  | 4:18.04.1-edu2           | 未测试   | 最新         | [查看](./297)  |
-|  298 | 企鹅画画(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/298)  | 1:0.9.23-edu1            | 未测试   | 最新         | [查看](./298)  |
-|  300 | 小画家(3A4000)版                      | [查看](http://app.loongapps.cn/#/detail/300)  | 4:18.04.0-edu3           | 未测试   | 最新         | [查看](./300)  |
-|  302 | FBreader电子阅读书(3A4000)版            | [查看](http://app.loongapps.cn/#/detail/302)  | 0.12.10dfsg2-3           | 未测试   | 最新         | [查看](./302)  |
-|  306 | PyCharm(3A4000)版                  | [查看](http://app.loongapps.cn/#/detail/306)  | 2020.1.5-edu2            | 未测试   | 最新         | [查看](./306)  |
-|  307 | pitivi影片编辑器(3A4000)版              | [查看](http://app.loongapps.cn/#/detail/307)  | 0.999-1                  | 未测试   | 最新         | [查看](./307)  |
 |  321 | Ardour数字音频工厂                      | [查看](http://app.loongapps.cn/#/detail/321)  | 1:5.12.0-3               | 未测试   | 最新         | [查看](./321)  |
 |  330 | Jeex十六进制编辑器                       | [查看](http://app.loongapps.cn/#/detail/330)  | 12.0.4-1.lnd.edu1        | 未测试   | 最新         | [查看](./330)  |
-|  331 | Jeex十六进制编辑器(3A4000)版              | [查看](http://app.loongapps.cn/#/detail/331)  | 12.0.4-1                 | 未测试   | 最新         | [查看](./331)  |
 |  402 | biForm龙众创芯专版                      | [查看](http://app.loongapps.cn/#/detail/402)  | 3.1.005-3                | 未测试   | 最新         | [查看](./402)  |
 |  403 | 智应软件中心(3A5000版)                   | [查看](http://app.loongapps.cn/#/detail/403)  | 1.0.001-3                | 未测试   | 最新         | [查看](./403)  |
 |  404 | biReader                          | [查看](http://app.loongapps.cn/#/detail/404)  | 3.1.005-3                | 未测试   | 最新         | [查看](./404)  |
-|  405 | biForm龙众创芯专版(3A4000)版             | [查看](http://app.loongapps.cn/#/detail/405)  | 3.1.005-2                | 未测试   | 最新         | [查看](./405)  |
-|  407 | 智应软件中心(3A4000版)                   | [查看](http://app.loongapps.cn/#/detail/407)  | 1.0.001-2                | 未测试   | 最新         | [查看](./407)  |
-|  408 | biReader(3A4000)版                 | [查看](http://app.loongapps.cn/#/detail/408)  | 3.1.005-2                | 未测试   | 最新         | [查看](./408)  |
 |  636 | 华宇拼音输入法                           | [查看](http://app.loongapps.cn/#/detail/636)  | 2.4.8.198                | 未测试   | 最新         | [查看](./636)  |
 | 1053 | 腾讯会议                              | [查看](http://app.loongapps.cn/#/detail/1053) | 3.15.0.402               | 未测试   | 最新         | [查看](./1053) |
 | 1087 | 亿图图示                              | [查看](http://app.loongapps.cn/#/detail/1087) | 11.5.6                   | 未测试   | 最新         | [查看](./1087) |
@@ -121,16 +78,12 @@ weight: 5
 | 1113 | 泰山Office                          | [查看](http://app.loongapps.cn/#/detail/1113) | 5.0.0.347                | 未测试   | 最新         | [查看](./1113) |
 | 1114 | 万得                                | [查看](http://app.loongapps.cn/#/detail/1114) | 21.4.0.1                 | 未测试   | 最新         | [查看](./1114) |
 | 1168 | 钉钉                                | [查看](http://app.loongapps.cn/#/detail/1168) | 1.7.0.30424              | 未测试   | 最新         | [查看](./1168) |
-| 1169 | WPS Office(3A4000)版               | [查看](http://app.loongapps.cn/#/detail/1169) | 11.1.0.11664             | 未测试   | 最新         | [查看](./1169) |
-| 1171 | 龙芯浏览器(3A4000)版                    | [查看](http://app.loongapps.cn/#/detail/1171) | 3.1.5637.4-1.stable      | 未测试   | 最新         | [查看](./1171) |
 | 1237 | Pixso网页版                          | [查看](http://app.loongapps.cn/#/detail/1237) | 1.0.0                    | 未测试   | 最新         | [查看](./1237) |
 | 1238 | ProcessOn网页版                      | [查看](http://app.loongapps.cn/#/detail/1238) | 1.0.0                    | 未测试   | 最新         | [查看](./1238) |
 | 1239 | SOOGIF网页版                         | [查看](http://app.loongapps.cn/#/detail/1239) | 1.0.0                    | 未测试   | 最新         | [查看](./1239) |
 | 1265 | 龙芯打印驱动引擎                          | [查看](http://app.loongapps.cn/#/detail/1265) | 1.0.0+dfsg.1-lnd.2       | 未测试   | 最新         | [查看](./1265) |
 | 1377 | 龙芯桌面智推                            | [查看](http://app.loongapps.cn/#/detail/1377) | 1.0.0-1.lnd.3            | 未测试   | 最新         | [查看](./1377) |
-| 1378 | 龙芯桌面智推(3A4000)版                   | [查看](http://app.loongapps.cn/#/detail/1378) | 1.0.0-1.lnd.3            | 未测试   | 最新         | [查看](./1378) |
 | 1392 | 龙芯剪辑                              | [查看](http://app.loongapps.cn/#/detail/1392) | 1.0.0-1                  | 未测试   | 最新         | [查看](./1392) |
-| 1393 | 龙芯剪辑(3A4000)版                     | [查看](http://app.loongapps.cn/#/detail/1393) | 1.0.0-1                  | 未测试   | 最新         | [查看](./1393) |
 | 1394 | 绿叶阅读器                             | [查看](http://app.loongapps.cn/#/detail/1394) | 1.0.2.0301               | 未测试   | 最新         | [查看](./1394) |
 | 1395 | E-Mobile                          | [查看](http://app.loongapps.cn/#/detail/1395) | 7.2.8                    | 未测试   | 最新         | [查看](./1395) |
 | 1406 | 3DOne                             | [查看](http://app.loongapps.cn/#/detail/1406) | 1.0.0                    | 未测试   | 最新         | [查看](./1406) |
@@ -141,12 +94,9 @@ weight: 5
 | 1438 | chartcube图表魔方                     | [查看](http://app.loongapps.cn/#/detail/1438) | 1.0.0                    | 未测试   | 最新         | [查看](./1438) |
 | 1444 | 秘塔写作猫                             | [查看](http://app.loongapps.cn/#/detail/1444) | 1.3.0                    | 未测试   | 最新         | [查看](./1444) |
 | 1569 | Garlic Protein Visualization分子查看器 | [查看](http://app.loongapps.cn/#/detail/1569) | 1.6-3.1                  | 未测试   | 最新         | [查看](./1569) |
-| 1579 | 万兴OFD(3A4000)版                    | [查看](http://app.loongapps.cn/#/detail/1579) | 2.0.0                    | 未测试   | 最新         | [查看](./1579) |
-| 1723 | 微信网页版(3A4000)版                    | [查看](http://app.loongapps.cn/#/detail/1723) | 2.3.2-4                  | 未测试   | 最新         | [查看](./1723) |
 | 1729 | 慧中虚拟仿真平台                          | [查看](http://app.loongapps.cn/#/detail/1729) | 0.1.0-lnd.edu1           | 未测试   | 最新         | [查看](./1729) |
 | 1730 | 金山词霸                              | [查看](http://app.loongapps.cn/#/detail/1730) | 0.1.0-lnd.edu1           | 未测试   | 最新         | [查看](./1730) |
 | 1731 | 光电通OEM3000DN启动工具                  | [查看](http://app.loongapps.cn/#/detail/1731) | 2.6-3                    | 未测试   | 最新         | [查看](./1731) |
-| 1740 | 威讯云桌面(3A4000)版                    | [查看](http://app.loongapps.cn/#/detail/1740) | 8.5.0.30                 | 未测试   | 最新         | [查看](./1740) |
 | 1741 | 威讯云桌面                             | [查看](http://app.loongapps.cn/#/detail/1741) | 8.5.0.30                 | 未测试   | 最新         | [查看](./1741) |
 | 1742 | 打印刻录系统                            | [查看](http://app.loongapps.cn/#/detail/1742) | 6.6.2305-5c              | 未测试   | 最新         | [查看](./1742) |
 | 1743 | 北信源网络防病毒系统                        | [查看](http://app.loongapps.cn/#/detail/1743) | 3.0.0.5                  | 未测试   | 最新         | [查看](./1743) |
