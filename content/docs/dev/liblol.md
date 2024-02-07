@@ -1,5 +1,5 @@
 ---
-title: 实现方式
+title: 实现原理
 toc: true
 weight: 1
 ---

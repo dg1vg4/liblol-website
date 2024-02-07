@@ -1,5 +1,5 @@
 ---
-title: 如何使用
+title: 使用教程
 toc: true
 weight: 1
 ---

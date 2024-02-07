@@ -6,5 +6,5 @@ weight: 3
 
 本版用于展示 libLoL 实现和开发日志等信息，详见如下页面：
 
-- [实现方式](/docs/dev/liblol)
+- [实现原理](/docs/dev/liblol)
 - [更新日志](/docs/dev/changelog)
