@@ -24,10 +24,10 @@ oma install liblol
 sudo apt install ./liblol-dkms_0.1.0_loong64.deb
 ```
 
-安装完成后，下载 libLoL 运行时包 [liblol_0.1.4.pre2-1_loong64.deb](https://github.com/AOSC-Dev/liblol/releases/download/debian%2Fv0.1.4_pre2-1/liblol_0.1.4.pre2-1_loong64.deb)，随后执行如下命令安装：
+安装完成后，下载 libLoL 运行时包 [liblol_0.1.4.pre3-1_loong64.deb](https://github.com/AOSC-Dev/liblol/releases/download/debian%2Fv0.1.4_pre3-1/liblol_0.1.4.pre3-1_loong64.deb)，随后执行如下命令安装：
 
 ```
-sudo apt install ./liblol_0.1.4.pre2-1_loong64.deb
+sudo apt install ./liblol_0.1.4.pre3-1_loong64.deb
 ```
 
 ## 安装应用
