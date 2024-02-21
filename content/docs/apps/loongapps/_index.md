@@ -1,6 +1,6 @@
 ﻿---
 title: 龙芯应用合作社
-toc: false
+toc: true
 weight: 5
 ---
 
