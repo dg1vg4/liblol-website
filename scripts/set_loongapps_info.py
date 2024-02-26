@@ -21,13 +21,20 @@ def indexmd():
     # 删除开源软件（云顶书院迁移）
     df.drop((df[df["开发者"] == "开源软件（云顶书院迁移）"]).index, inplace=True)
     # 添加兼容性
-    df = df.assign(兼容性="未测试")
+    df = df.assign(兼容性="")
     # 添加liblol版本
-    df = df.assign(liblol版本="最新")
-    # 修改页面链接
-    for url in df["页面链接"]:
-        url_new = "[查看](" + str(url) + ")"
-        df.loc[df["页面链接"] == url, "页面链接"] = url_new
+    # df = df.assign(liblol版本="最新")
+    # 添加额外链接
+    # df = df.assign(额外操作="")
+    # 应用名称超链接
+    for id in df["应用编号"]:
+        name = str(df.loc[df["应用编号"] == id, "应用名称"].values)
+        name = name[2:-2]
+        url=str(df.loc[df["应用编号"] == id, "页面链接"].values)
+        url= url[2:-2]
+        name_url = "[" + name + "]" + "(" + url + ")"
+        df.loc[df["应用编号"] == id, "应用名称"] = name_url
+
     # 添加每个app单独的页面超链接
     for id in df["应用编号"]:
         url = "[查看](" + "./" + str(id) + ")"
@@ -40,6 +47,7 @@ def indexmd():
     df.drop(columns="更新时间", axis=1, inplace=True)
     df.drop(columns="开发者", axis=1, inplace=True)
     df.drop(columns="下载链接", axis=1, inplace=True)
+    df.drop(columns="页面链接", axis=1, inplace=True)
     df.rename(
         columns={
             "应用编号": "编号",
@@ -50,7 +58,7 @@ def indexmd():
     )
     # 生成文档头
     title = "---\ntitle: 龙芯应用合作社\ntoc: false\nweight: 5\n---\n"
-    with open("../content/docs/apps/loong/_index.md", "w", encoding="utf-8-sig") as md:
+    with open("../content/docs/apps/loongapps/_index.md", "w", encoding="utf-8-sig") as md:
         md.write(title)
         df.fillna("", inplace=True)
         df.to_markdown(buf=md, index=False)
@@ -84,9 +92,9 @@ def appmd():
         },
         inplace=True,
     )
-    df = df.assign(兼容性="未测试")
+    df = df.assign(兼容性="")
     # 添加liblol版本
-    df = df.assign(liblol版本="最新")
+    # df = df.assign(liblol版本="最新")
     # 编辑页面链接
     for url in df["页面链接"]:
         url_new = "[跳转](" + str(url) + ")"
@@ -101,7 +109,7 @@ def appmd():
         df.loc[df["下载链接"] == url, "下载链接"] = url_new
     # 以appid生成文件名
     for id in df["编号"]:
-        filename = "../content/docs/apps/loong/" + str(id) + ".md"
+        filename = "../content/docs/apps/loongapps/" + str(id) + ".md"
         title = str(df.loc[df["编号"] == id, "应用名称"].values)
         title = title[2:-2]
         head = (
