@@ -87,26 +87,26 @@ def appmd():
     df.rename(
         columns={
             "应用编号": "编号",
-            "安装教程": "详细信息",
+            # "安装教程": "详细信息",
             "版本号": "版本",
         },
         inplace=True,
     )
-    df = df.assign(兼容性="")
+    # df = df.assign(兼容性="")
     # 添加liblol版本
     # df = df.assign(liblol版本="最新")
     # 编辑页面链接
-    for url in df["页面链接"]:
-        url_new = "[跳转](" + str(url) + ")"
-        df.loc[df["页面链接"] == url, "页面链接"] = url_new
+    # for url in df["页面链接"]:
+    #     url_new = "[跳转](" + str(url) + ")"
+    #     df.loc[df["页面链接"] == url, "页面链接"] = url_new
     # 编辑下载链接
     for time in df["更新时间"]:
         time_new = str(time)
         time_new = time_new.replace("T", " ")
         df.loc[df["更新时间"] == time, "更新时间"] = time_new
-    for url in df["下载链接"]:
-        url_new = "[下载](" + str(url) + ")"
-        df.loc[df["下载链接"] == url, "下载链接"] = url_new
+    # for url in df["下载链接"]:
+    #     url_new = "[下载](" + str(url) + ")"
+    #     df.loc[df["下载链接"] == url, "下载链接"] = url_new
     # 以appid生成文件名
     for id in df["编号"]:
         filename = "../content/docs/apps/loongapps/" + str(id) + ".md"
@@ -117,30 +117,31 @@ def appmd():
             + title
             + "\ntoc: true\nweight: "
             + str(id)
-            + "\n---\n"
-            + "\n## 应用信息 \n"
+            + "\n---\n\n"
         )
-        df.rename(
-            columns={
-                "应用编号": "编号",
-                "安装教程": "详细信息",
-                "版本号": "版本",
-            },
-            inplace=True,
-        )
-        appinfo = df.loc[df["编号"] == id]
+        version = str(df.loc[df["编号"] == id, "版本"].values)[2:-2]
+        version = "版本：" + version + " | "
+        update_time = str(df.loc[df["编号"] == id, "更新时间"].values)[2:-2]
+        update_time = "更新时间：" + update_time + " | "
+        package_url = str(df.loc[df["编号"] == id, "下载链接"].values)[2:-2]
+        app_url = str(df.loc[df["编号"] == id, "页面链接"].values)[2:-2]
+        app_url = "[官方下载页面](" + app_url + ")"
+
+        package_name = package_url[38:]
+        # appinfo = df.loc[df["编号"] == id]
+        appinfo = version + update_time + app_url
         body = (
-            "\n### 安装libLoL及该应用 \n参考[使用方法](/docs/usage) \n### 额外操作 \n"
+            "\n\n## 安装教程 \n\n### AOSC OS \n\n1. 下载软件包\n2. 安装软件包\n\n```bash\nsudo oma install " + package_name + "\n```"
         )
-        footer = "\n\n## 历史版本 \n "
+        footer = "\n\n## 额外操作\n\n无需额外操作即可使用\n\n## 已知问题\n\n暂无已知问题\n\n"
         # body = str(body)
         # print(body)
         with open(filename, "w", encoding="utf-8-sig") as file:
             file.write(head)
-            appinfo.to_markdown(buf=file, index=False)
+            file.write(appinfo)
             file.write(body)
             file.write(footer)
 
 
-indexmd()
+# indexmd()
 appmd()
