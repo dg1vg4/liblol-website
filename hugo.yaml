@@ -47,7 +47,7 @@ params:
   dateFormat: "January 2, 2006"
   page:
     # full (100%), wide (90rem), normal (1280px)
-    width: full
+    width: wide
   footer:
     enable: true
     displayCopyright: true
