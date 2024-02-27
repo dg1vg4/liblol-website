@@ -1,6 +1,6 @@
 ﻿---
 title: 龙芯应用合作社
-toc: false
+toc: true
 weight: 5
 ---
 |   编号 | 应用名称                                                                       | 版本                       | 兼容性   | 详细信息         |
