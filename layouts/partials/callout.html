@@ -1,0 +1,10 @@
+{{ define "partials/callout-raw" }}
+    {{- printf `{{< callout type="%s" %s>}}`
+        (cond (eq .type "success") "info" .type)
+        (cond (eq .type "success") `emoji="✅"` "")
+    | safeHTML -}}
+        {{ .content}}
+    {{- `{{< /callout >}}` | safeHTML -}}
+{{ end }}
+{{ $out := partial "callout-raw" . | page.RenderString }}
+{{ cond (eq .type "success") (replace $out "blue" "green") $out | safeHTML }}

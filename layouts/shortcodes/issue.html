@@ -1,0 +1,5 @@
+{{ .Page.Store.Add "issue" (slice (dict
+    "title" (.Get 0)
+    "content" (markdownify .Inner)
+    "ord" .Ordinal
+)) }}

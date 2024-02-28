@@ -2,6 +2,9 @@
 title: 应用兼容性数据库
 toc: true
 weight: 2
+type: apps
+cascade:
+  type: apps
 ---
 
 libLoL 应用兼容性数据由社区贡献者维护，兼容性报告对应的应用版本、来源和更新时间等信息均在页面中列出。其中兼容性使用如下方式表示：

@@ -1,0 +1,5 @@
+{{- if .Params.downloadUrl -}}
+    {{- .Params.downloadUrl -}}
+{{- else -}}
+    http://app.loongapps.cn/#/detail/{{ .Params.id }}
+{{- end -}}
