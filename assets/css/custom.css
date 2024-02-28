@@ -1,0 +1,27 @@
+.border-green-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(187 247 208 / var(--tw-border-opacity));
+}
+
+.bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
+.text-green-900 {
+  --tw-text-opacity: 1;
+  color: rgb(20 83 45 / var(--tw-text-opacity));
+}
+
+:is(html[class~="dark"] .dark\:border-green-200\/30) {
+  border-color: rgb(187 247 208 / 0.3);
+}
+
+:is(html[class~="dark"] .dark\:bg-green-900\/30) {
+  background-color: rgb(20 83 45 / 0.3);
+}
+
+:is(html[class~="dark"] .dark\:text-green-200) {
+  --tw-text-opacity: 1;
+  color: rgb(187 247 208 / var(--tw-text-opacity));
+}

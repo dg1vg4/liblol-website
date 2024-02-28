@@ -1,0 +1,66 @@
+{{ define "partials/additems" }}
+    {{ if .val }}
+        <h2>{{ .title }}</h2>
+        {{ $have := slice }}
+        {{ range .val }}
+            {{ if not (in $have .ord) }}
+                {{ if .title }} <h3>{{ .title }}</h3> {{ end }}
+                {{ .content }}
+                {{ $have = append .ord $have }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ define "partials/install-raw"}}
+    {{- $osInfo := partial "apps/install-os" -}}
+    {{- if not (eq .Params.compatibility 1) -}}
+        {{- $dot := . -}}
+        {{- $osNames := slice -}}
+        {{- range $osinfo := $osInfo -}}
+            {{- $osNames = append $osinfo.name $osNames -}}
+        {{- end -}}
+        {{- printf `{{< tabs items="%s" >}}` (delimit $osNames ",") | safeHTML -}}{{- printf "\n" -}}
+        {{- range $osinfo := $osInfo -}}
+            {{- printf `{{<tab>}}` | safeHTML -}}{{- printf "\n" -}}
+            {{- if and ($dot.Store.Get "install") (isset ($dot.Store.Get "install") $osinfo.ref) -}}
+                {{- index ($dot.Store.Get "install") $osinfo.ref -}}
+            {{- else -}}
+                {{- partial (printf "apps/install-os/%s" $osinfo.ref ) $dot -}}
+            {{- end -}}
+            {{- printf `{{</tab>}}` | safeHTML -}}{{- printf "\n" -}}
+        {{- end -}}
+        {{- printf `{{< /tabs >}}` | safeHTML -}}{{- printf "\n" -}}
+    {{- end -}}
+{{ end }}
+{{ define "partials/install"}}
+    <h2>安装教程</h2>
+    {{ partial "partials/compatibility" . }}
+    {{ partial "install-raw" . | .RenderString }}
+{{ end }}
+{{ define "partials/appInfo"}}
+    <span>版本：{{ .Params.version }}</span> |
+    <span>更新时间：<span class="utctime">{{ .Params.updateTime }}</span></span> |
+    <span><a href="{{ partial "apputils/downloadurl" . }}" target="_blank" rel="noopener">官方下载页面</a></span> |
+    <span>兼容性：{{ partial "apputils/compatibility" . }}</span>
+{{ end }}
+{{ define "partials/compatibility"}}
+    {{ $map := (slice
+        (dict "type" "warning" "content" "该软件未经测试")
+        (dict "type" "error" "content" "该软件不能被 libLoL 兼容")
+        (dict "type" "info" "content" "该软件部分功能不可用")
+        (dict "type" "nil")
+    )}}
+    {{ if not (eq "nil" (index (index $map (int .Params.compatibility) "type"))) }}
+        {{ partial "callout" (index $map (int .Params.compatibility)) }}
+    {{ end }}
+{{ end }}
+{{ define "partials/doc-content" }}
+   {{ $_dummy := .Content }}
+   {{ partial "partials/appInfo" . }}
+   {{ partial "install" . }}
+   {{ partial "additems" (dict "val" (.Store.Get "extraop") "title" "额外操作") }}
+   {{ partial "additems" (dict "val" (.Store.Get "issue") "title" "已知问题") }}
+{{ end }}
+{{ define "main" }}
+    {{ partial "docs-layout.html" (dict "doc_content" (partial "doc-content" .) "page" .)  }}
+{{ end }}

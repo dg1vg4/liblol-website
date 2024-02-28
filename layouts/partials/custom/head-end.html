@@ -1,0 +1,6 @@
+{{- $jsTime := resources.Get "js/utctime.js" -}}
+{{- $scripts := slice $jsTime | resources.Concat "js/custom.js" -}}
+{{- if hugo.IsProduction -}}
+  {{- $scripts = $scripts | minify | fingerprint -}}
+{{- end -}}
+<script defer src="{{ $scripts.RelPermalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
