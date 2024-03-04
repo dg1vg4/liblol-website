@@ -1,7 +1,7 @@
 {{- $levels := (slice
     (dict "type" "warning" "content" "未测试")
     (dict "type" "error" "content" "不可用")
-    (dict "type" "info" "content" "部分功能不可用")
+    (dict "type" "info" "content" "存在问题")
     (dict "type" "success" "content" "可用")
 ) -}}
 {{- partial "callout-inline" (index $levels (int .Params.compatibility)) -}}

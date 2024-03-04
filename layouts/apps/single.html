@@ -47,7 +47,7 @@
     {{ $map := (slice
         (dict "type" "warning" "content" "该软件未经测试")
         (dict "type" "error" "content" "该软件不能被 libLoL 兼容")
-        (dict "type" "info" "content" "该软件部分功能不可用")
+        (dict "type" "info" "content" "该软件部分功能不可用或存在问题")
         (dict "type" "nil")
     )}}
     {{ if not (eq "nil" (index (index $map (int .Params.compatibility) "type"))) }}
