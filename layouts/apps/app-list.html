@@ -7,17 +7,17 @@
                 <th>应用名称</th>
                 <th>版本</th>
                 <th>兼容性</th>
-                <th>详细信息</th>
+                <th>商店页面</th>
             </tr>
         </thead>
         <tbody>
             {{ range .Data.Pages }}
                 <tr>
                     <td>{{ .Params.id }}</td>
-                    <td><a href="{{ partial "apputils/downloadurl" . }}" target="_blank" rel="noopener">{{ .Title }}</a></td>
+                    <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
                     <td>{{ .Params.version }}</td>
                     <td>{{ partial "apputils/compatibility" . }}</td>
-                    <td><a href="{{ .RelPermalink }}">查看</a></td>
+                    <td><a href="{{ partial "apputils/downloadurl" . }}" target="_blank" rel="noopener">查看</a></td>
                 </tr>
             {{ end }}
         </tbody>
