@@ -8,10 +8,12 @@ weight: 2
 
 详见[实现方式](/docs/dev/liblol)。
 
-## 0.1.4（即将发布）
+## 0.1.4
 
 - 提供 Debian 软件包。
-- 适配 AOSC OS 的 Autobuild4 构建软件包。
+- 适配 AOSC OS 的 Autobuild4 构建工具。
+- 提供 `libanl`, `libutil`, `libnsl` 兼容库。
+- 为新世界缺失的 `*stat(at)?` 系统调用提供备用调用。
 
 ## 0.1.3
 
