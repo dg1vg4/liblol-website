@@ -25,3 +25,11 @@
   --tw-text-opacity: 1;
   color: rgb(187 247 208 / var(--tw-text-opacity));
 }
+
+:is(html[class~="dark"] .dark\:border-gray-200\/30) {
+  border-color: rgb(229 231 235 / 0.3);
+}
+
+:is(html[class~="dark"] .dark\:bg-gray-900\/30) {
+  background-color: rgb(17 24 39 / 0.3);
+}
