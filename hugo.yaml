@@ -59,7 +59,7 @@ params:
     type: flexsearch
     flexsearch:
       # index page by: content | summary | heading | title
-      index: content
+      index: title
   theme:
     # light | dark | system
     default: system
