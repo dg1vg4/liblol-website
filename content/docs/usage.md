@@ -30,6 +30,14 @@ sudo apt install ./liblol-dkms_0.1.0_loong64.deb
 sudo apt install ./liblol_0.1.4-1_loong64.deb
 ```
 
+### Loong Arch Linux
+
+Loong Arch Linux 在官方仓库提供 libLoL，使用如下命令即可安装：
+
+```
+sudo pacman -S la_ow_syscall-dkms liblol
+```
+
 ## 安装应用
 
 您可在[龙芯应用合作社](http://app.loongapps.cn/#/home)或其他分发渠道下载和安装旧世界应用。
