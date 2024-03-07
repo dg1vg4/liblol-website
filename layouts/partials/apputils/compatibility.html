@@ -5,4 +5,4 @@
     (dict "type" "success" "content" "可用")
     (dict "type" "missing" "content" "新世界可用")
 ) -}}
-{{- partial "callout-inline" (index $levels (int .Params.compatibility)) -}}
+{{- partialCached "callout-inline" (index $levels (int .Params.compatibility)) (int .Params.compatibility) -}}

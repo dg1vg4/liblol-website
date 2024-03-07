@@ -9,7 +9,7 @@
         {{ .content}}
     {{- `{{< /callout >}}` | safeHTML -}}
 {{ end }}
-{{ $out := partial "callout-raw" . | page.RenderString }}
+{{ $out := partial "callout-raw" . | (index site.AllPages 0).RenderString }}
 {{ cond (eq .type "success") (replace $out "blue" "green") (
    cond (eq .type "missing") (replace $out "blue" "gray")
    $out
