@@ -2,6 +2,8 @@
 title: 实现原理
 toc: true
 weight: 1
+aliases:
+    - /docs/dev/liblol/
 ---
 
 本文介绍了 libLoL 的实现原理，以及一些关键细节的处理。
