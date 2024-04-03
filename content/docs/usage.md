@@ -114,6 +114,30 @@ sudo pacman -S la_ow_syscall-dkms liblol
 
 其中带有 `local` 字样的目录可供用户自助放置一些库文件，以便绕过个别应用所存在的问题。
 
+### Slackwareloong
+
+Slackwareloong 在 SlackBuilds 软件仓库提供 libLoL，使用如下命令即可安装：
+
+```bash
+slackpkg install liblol
+
+```
+
+加载 la_ow_syscall 内核模块，若没有此模块请更新内核
+
+```bash
+insmod /lib/modules/`uname -r`/kernel/arch/loongarch/ow_syscall/la_ow_syscall.ko
+```
+
+由于不同发行版的目录布局各异，不同发行版上的 libLoL 库搜索路径之间也存在不同。Slackwareloong 上 libLoL 的库搜索路径如下：
+
+|加载阶段|路径（从上到下顺序搜索）|
+|:------:|:---|
+|优先|<ul><li><code>/opt/lol/local/preload-lib64</code></li><li><code>/opt/lol/support/lib64/loongarch64-aosc-linux-gnuow</code></li></ul>|
+|正常|<ul><li><code>/opt/lol/local/lib64</code></li><li><code>/opt/lol/lib64/loongarch64-aosc-linux-gnuow</code></li><li><code>/opt/lol/lib64</code></li></ul>|
+
+其中带有 `local` 字样的目录可供用户自助放置一些库文件，以便绕过个别应用所存在的问题。
+
 ## 安装应用
 
 您可在[龙芯应用合作社](http://app.loongapps.cn/#/home)或其他分发渠道下载和安装旧世界应用。
