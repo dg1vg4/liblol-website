@@ -1,10 +1,11 @@
 # coding=utf-8
 import pandas as pd
 import json
+import os
 
 def appmd():
     df = pd.read_csv(
-        "../static/data/loongapplist-latest.csv", engine="python", encoding="utf-8-sig"
+        "../static/data/loongapplist-2024-04-16-new.csv", engine="python", encoding="utf-8-sig"
     )
     for name in df["应用名称"]:
         a = "3A4000"
