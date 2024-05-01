@@ -52,6 +52,20 @@ sudo apt install ./liblol_0.1.5-1_loong64.deb
 
 其中带有 `local` 字样的目录可供用户自助放置一些库文件，以便绕过个别应用所存在的问题。
 
+### Deepin
+
+首先，下载内核模块包 [liblol-dkms_0.1.0_loong64.deb](https://github.com/AOSC-Dev/la_ow_syscall/releases/download/debian%2F0.1.0/liblol-dkms_0.1.0_loong64.deb) 并执行如下命令安装：
+
+```
+sudo apt install ./liblol-dkms_0.1.0_loong64.deb
+```
+
+安装完成后，下载 libLoL 运行时包 [liblol_0.1.5-1_loong64.deb](https://github.com/AOSC-Dev/liblol/releases/download/debian%2Fv0.1.5-1/liblol_0.1.5-1_loong64.deb)，随后执行如下命令安装：
+
+```
+sudo apt install ./liblol_0.1.5-1_loong64.deb
+```
+
 ### Gentoo
 
 目前，libLoL 的打包工作在 [`gentoo-zh` overlay](https://github.com/microcai/gentoo-zh)
