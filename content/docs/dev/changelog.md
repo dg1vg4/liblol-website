@@ -6,7 +6,13 @@ weight: 2
 
 当前使用的 0.1.0 系列 libLoL 使用一份特殊版本的 Glibc 运行时库，直接载入新世界系统运行时来实现应用兼容性。
 
-详见[实现方式](/docs/dev/liblol)。
+详见[实现原理](/docs/dev/design)。
+
+## 0.1.5
+
+- Glibc 版本更新至 2.39
+- 编译时新增 ABI 及符号完整性检查-
+- `libcrypt` 库实现更改为 `libxcrypt`
 
 ## 0.1.4
 
