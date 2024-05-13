@@ -52,9 +52,9 @@ sudo apt install ./liblol_0.1.5-1_loong64.deb
 
 其中带有 `local` 字样的目录可供用户自助放置一些库文件，以便绕过个别应用所存在的问题。
 
-### Deepin
+### deepin
 
-Deepin 在主软件仓库提供 libLoL，使用如下命令安装即可使用：
+deepin 在主软件仓库提供 libLoL，使用如下命令安装即可使用：
 
 ```
 sudo apt install liblol liblol-dkms
