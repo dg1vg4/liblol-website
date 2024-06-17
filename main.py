@@ -132,6 +132,28 @@ def main():
         df_update = df_update._append(df_new, ignore_index=True)
         df_update = df_update._append(df_down, ignore_index=True)
         df_update = df_update._append(df_upgrade, ignore_index=True)
+        for name in df_update["应用名称"]:
+            a = "3A4000"
+            if a in name:
+                df_update.drop((df_update[df_update["应用名称"] == name]).index, inplace=True)
+            else:
+                continue
+        df_update.drop(columns="图片链接", axis=1, inplace=True)
+        df_update.sort_values("应用编号", ascending=True, inplace=True)
+        # 删除开源软件
+        df_update.drop((df_update[df_update["开发者"] == "开源软件"]).index, inplace=True)
+        # 删除二进制翻译软件
+        df_update.drop((df_update[df_update["开发者"] == "二进制翻译软件"]).index, inplace=True)
+        # 删除开源软件（云顶书院迁移）
+        df_update.drop((df_update[df_update["开发者"] == "开源软件（云顶书院迁移）"]).index, inplace=True)
+        df_update.rename(
+            columns={
+                "应用编号": "编号",
+                # "安装教程": "详细信息",
+                "版本号": "版本",
+            },
+            inplace=True,
+        )
         df_down.to_csv("loongapplist-down.csv", encoding="utf-8-sig", index=False)
         df_new.to_csv("loongapplist-new.csv", encoding="utf-8-sig", index=False)
         df_upgrade.to_csv("loongapplist-upgrade.csv", encoding="utf-8-sig", index=False)
