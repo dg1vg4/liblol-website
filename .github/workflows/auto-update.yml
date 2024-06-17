@@ -1,0 +1,81 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For  more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: auto-update
+
+on:
+  push:
+    branches:
+      - "spider"
+  watch:
+    types: started
+  schedule:
+    - cron:  '0 0 */1 * *'
+permissions:
+  contents: write
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: run python script
+        run: |
+          python main.py
+      - name: Commit and push changes
+        id: commit
+        run: |
+          git config --global user.name "Github Action"
+          git config --global user.email "Action@github.com"
+          git add loongapplist-latest.csv
+          git commit -m "auto update" -a && git push && echo "A=1" >> $GITHUB_ENV || echo "no updates"
+      - name: Set date env
+        run:  |
+          cp loongapplist-latest.csv loongapplist-latest-$(date '+%Y-%m-%d').csv
+          cp loongapplist-new.csv loongapplist-new-$(date '+%Y-%m-%d').csv
+          cp loongapplist-update.csv loongapplist-update-$(date '+%Y-%m-%d').csv
+          cp loongapplist-down.csv loongapplist-down-$(date '+%Y-%m-%d').csv
+          cp loongapplist-upgrade.csv loongapplist-upgrade-$(date '+%Y-%m-%d').csv
+          echo "TODAY=$(date '+%Y/%m/%d')" >> $GITHUB_ENV
+          echo "LATEST=loongapplist-latest-$(date '+%Y-%m-%d').csv" >> $GITHUB_ENV
+          echo "NEW=loongapplist-new-$(date '+%Y-%m-%d').csv" >> $GITHUB_ENV
+          echo "UPDATE=loongapplist-update-$(date '+%Y-%m-%d').csv" >> $GITHUB_ENV
+          echo "DOWN=loongapplist-down-$(date '+%Y-%m-%d').csv" >> $GITHUB_ENV
+          echo "UPGRADE=loongapplist-upgrade-$(date '+%Y-%m-%d').csv" >> $GITHUB_ENV
+      - name: Update Release Everyday
+        uses: softprops/action-gh-release@v1
+        if: env.A == 1
+        with:
+          files: |
+            ${{ env.LATEST }}
+            ${{ env.NEW }}
+            ${{ env.UPDATE }}
+            ${{ env.DOWN }}
+            ${{ env.UPGRADE }}
+          tag_name: ${{ env.TODAY }}
+          name: ${{ env.TODAY }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update latest Release
+        uses: softprops/action-gh-release@v1
+        if:  env.A == 1
+        with:
+          files: |
+            loongapplist-latest.csv
+            loongapplist-new.csv
+            loongapplist-update.csv
+            loongapplist-down.csv
+            loongapplist-upgrade.csv
+          tag_name: latest
+          name: Latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
