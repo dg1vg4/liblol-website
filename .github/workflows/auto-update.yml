@@ -7,8 +7,6 @@ on:
   push:
     branches:
       - "spider"
-  watch:
-    types: started
   schedule:
     - cron:  '0 0 */1 * *'
 permissions:
@@ -34,10 +32,12 @@ jobs:
       - name: Commit and push changes
         id: commit
         run: |
+          echo -e "龙芯应用合作社有应用更新啦！\n " > updatelog.txt
+          awk -F, '{print "-", $1, $2, $4}' loongapplist-update.csv >> updatelog.txt
           git config --global user.name "Github Action"
           git config --global user.email "Action@github.com"
           git add loongapplist-latest.csv
-          git commit -m "auto update" -a && git push && echo "A=1" >> $GITHUB_ENV || echo "no updates"
+          git commit -F updatelog.txt && git push && echo "A=1" >> $GITHUB_ENV || echo "no updates"
       - name: Set date env
         run:  |
           cp loongapplist-latest.csv loongapplist-latest-$(date '+%Y-%m-%d').csv
@@ -63,6 +63,7 @@ jobs:
             ${{ env.UPGRADE }}
           tag_name: ${{ env.TODAY }}
           name: ${{ env.TODAY }}
+          body_path: updatelog.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Update latest Release
@@ -77,5 +78,6 @@ jobs:
             loongapplist-upgrade.csv
           tag_name: latest
           name: Latest
+          body_path: updatelog.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
