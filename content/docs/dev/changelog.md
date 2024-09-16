@@ -8,6 +8,11 @@ weight: 2
 
 详见[实现原理](/docs/dev/design)。
 
+## 0.1.6
+
+- Glibc 版本更新至 2.40；
+- 修正了 `lxstat64` 的实现，使之使用 `statx` 系统调用。
+
 ## 0.1.5
 
 - Glibc 版本更新至 2.39
