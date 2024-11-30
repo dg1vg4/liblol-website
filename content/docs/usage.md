@@ -29,16 +29,16 @@ oma install liblol
 
 ### Debian
 
-首先，下载内核模块包 [liblol-dkms_0.1.0_loong64.deb](https://github.com/AOSC-Dev/la_ow_syscall/releases/download/debian%2F0.1.0/liblol-dkms_0.1.0_loong64.deb) 并执行如下命令安装：
+首先，在[此页面](https://github.com/AOSC-Dev/la_ow_syscall/releases)下载最新版本的内核模块包 [liblol-dkms_0.1.1_loong64.deb](https://github.com/AOSC-Dev/la_ow_syscall/releases/download/debian%2Fv0.1.1/liblol-dkms_0.1.1_loong64.deb) 并执行如下命令安装：
 
 ```
-sudo apt install ./liblol-dkms_0.1.0_loong64.deb
+sudo apt install ./liblol-dkms_0.1.1_loong64.deb
 ```
 
-安装完成后，下载 libLoL 运行时包 [liblol_0.1.5-1_loong64.deb](https://github.com/AOSC-Dev/liblol/releases/download/debian%2Fv0.1.5-1/liblol_0.1.5-1_loong64.deb)，随后执行如下命令安装：
+安装完成后，在[此页面](https://github.com/AOSC-Dev/liblol/releases)下载最新版本的 libLoL 运行时包 [liblol_0.1.6-1_loong64.deb](https://github.com/AOSC-Dev/liblol/releases/download/debian%2Fv0.1.6-1/liblol_0.1.6-1_loong64.deb)，随后执行如下命令安装：
 
 ```
-sudo apt install ./liblol_0.1.5-1_loong64.deb
+sudo apt install ./liblol_0.1.6-1_loong64.deb
 ```
 
 由于不同发行版的目录布局各异，不同发行版上的 libLoL 库搜索路径之间也存在不同。Debian 上 libLoL 的库搜索路径如下：
