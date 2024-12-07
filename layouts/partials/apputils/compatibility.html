@@ -4,5 +4,6 @@
     (dict "type" "info" "content" "存在问题")
     (dict "type" "success" "content" "可用")
     (dict "type" "missing" "content" "新世界可用")
+    (dict "type" "warning" "content" "注意！Debian 系发行版在安装旧世界软件包之前，可能需要转换软件包架构。")
 ) -}}
 {{- partialCached "callout-inline" (index $levels (int .Params.compatibility)) (int .Params.compatibility) -}}

@@ -27,7 +27,7 @@ oma install liblol
 
 其中带有 `local` 字样的目录可供用户自助放置一些库文件，以便绕过个别应用所存在的问题。
 
-### Debian
+### Debian / Loongnix 25 beta
 
 首先，在[此页面](https://github.com/AOSC-Dev/la_ow_syscall/releases)下载最新版本的内核模块包 [liblol-dkms_0.1.1_loong64.deb](https://github.com/AOSC-Dev/la_ow_syscall/releases/download/debian%2Fv0.1.1/liblol-dkms_0.1.1_loong64.deb) 并执行如下命令安装：
 
@@ -148,7 +148,17 @@ insmod /lib/modules/`uname -r`/kernel/arch/loongarch/ow_syscall/la_ow_syscall.ko
 
 ## 安装应用
 
-您可在[龙芯应用合作社](http://app.loongapps.cn/#/home)或其他分发渠道下载和安装旧世界应用。
+您可在[龙芯应用合作社](http://app.loongapps.cn/#/home)或其他分发渠道下载旧世界应用。
+
+
+<p>{{< compatibility-icon 5 >}} 
+
+请[点此](https://raw.githubusercontent.com/AOSC-Dev/scriptlets/refs/heads/master/loong64-it/loong64-it.bash)下载 `loong64-it` 脚本，并执行如下命令：
+
+```
+bash loong64-it.bash [PACKAGE1] [PACKAGE2] ...
+# 其中 [PACKAGE1] [PACKAGE2] 为软件包的路径及文件名
+```
 
 ## 应用兼容性
 
