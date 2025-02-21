@@ -148,7 +148,7 @@ insmod /lib/modules/`uname -r`/kernel/arch/loongarch/ow_syscall/la_ow_syscall.ko
 
 ## 安装应用
 
-您可在[龙芯应用合作社](http://app.loongapps.cn/#/home)或其他分发渠道下载旧世界应用。
+您可在[龙芯应用合作社](https://app.loongapps.cn/home)或其他分发渠道下载旧世界应用。
 
 
 <p>{{< compatibility-icon 5 >}} 
